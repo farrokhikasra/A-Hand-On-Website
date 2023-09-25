@@ -1,6 +1,5 @@
 package com.website.springbootwebsite.apis.users;
 
-import org.apache.catalina.User;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
@@ -11,7 +10,7 @@ public interface UserRepository extends PagingAndSortingRepository<UserEntity, L
 
     List<UserEntity> findAll();
 
-    List<UserEntity> getAllByRole(Role role);
+    List<UserEntity> findAllByRole(Role role);
 
     UserEntity findById(Long id);
 

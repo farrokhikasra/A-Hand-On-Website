@@ -22,4 +22,5 @@ public class PasswordTest {
         String encrypted = handler.encode("Hi my name is Kasra");
         assertTrue(handler.isMatch(encrypted, "Hi my name is Kasra"));
     }
+
 }

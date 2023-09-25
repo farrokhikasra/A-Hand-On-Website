@@ -14,7 +14,7 @@ public class UserEntity {
     private String email;
     private Role role;
 
-    public UserEntity(String username, String password, String email) {
+    public UserEntity(String username, String email, String password) {
         super();
         this.username = username;
         this.email = email;
@@ -64,5 +64,17 @@ public class UserEntity {
 
     public Role getRole() {
         return role;
+    }
+
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", role=" + role +
+                '}';
     }
 }

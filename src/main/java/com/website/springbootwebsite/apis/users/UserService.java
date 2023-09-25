@@ -29,8 +29,8 @@ public class UserService {
         return repository.findByEmail(email);
     }
 
-    public List<UserEntity> getAllByRole(Role role) {
-        return repository.getAllByRole(role);
+    public List<UserEntity> findAllByRole(Role role) {
+        return repository.findAllByRole(role);
     }
 
     public long addUser(String username, String email, String password, String confirmPassword) {
@@ -44,7 +44,5 @@ public class UserService {
         repository.save(newUser);
         return newUser.getId();
     }
-
-
 
 }
